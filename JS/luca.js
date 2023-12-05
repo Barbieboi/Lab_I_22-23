@@ -14,7 +14,7 @@ function conta_pari(T){
 
                 T
             T       T
-        /   |  \    |
+        /   |   \   |
         T   T   T   T
  
 
@@ -34,7 +34,7 @@ function maxM(t){
 function* generatore(n){
     let i = 0
     while(i < n){
-        yield n+i ;
+        yield i ;
         i++ ;
     }
 }
@@ -42,5 +42,5 @@ function* generatore(n){
 let oggetto = generatore(6);
 
 for(k of oggetto){
-    console.log(k);
+    console.log(oggetto[k]);
 }
